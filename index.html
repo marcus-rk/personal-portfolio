@@ -17,9 +17,9 @@
     <header>
         <img class="burger-nav-bar" src="resources/burger_menu_canva.png" alt="menu navigation icon">
         <input type="checkbox" class="nav-toggle">
-        <nav class="nav-bar">
-            <ul class="nav-bar-content">
-                <li><a href="#landing-page-section">Forside</a></li>
+        <nav class="nav-bar"> <!-- class needed for burger-menu -->
+            <ul>
+                <li><a href="#landing-page">Forside</a></li>
                 <li><a href="#about-me-section">Om mig</a></li>
                 <li><a href="#portfolio-section">Portefølje</a></li>
                 <li>
@@ -30,8 +30,8 @@
     </header>
 
     <!-- LANDING PAGE -->
-    <section class="landing-page-section" id="landing-page-section">
-        <div class="landing-page-text-wrapper">
+    <section id="landing-page">
+        <div class="landing-page-container">
             <h3>IT-arkitektur studerende</h3>
             <h1>Marcus Portefølje 2023</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -49,7 +49,7 @@
     <!------------------->
 
     <!-- ABOUT SECTION -->
-    <section class="about-me-section" id="about-me-section">
+    <section id="about-me-section">
         <h2>HVEM ER JEG?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -96,7 +96,7 @@
     <!----------------------->
 
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio-section" id="portfolio-section">
+    <section id="portfolio-section">
         <h2>&lt Portefølje Projekter &gt</h2> <!-- &lt is < and &gt is > -->
         <div class="portfolio-project-wrapper">
             <div class="portfolio-project">
