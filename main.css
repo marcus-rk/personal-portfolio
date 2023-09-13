@@ -248,7 +248,10 @@ nav ul {
 } .project-text-wrapper a {
     color: black;
     font-weight: bold;
-  }
+  } .project-text-wrapper a:hover {
+          color: black;
+          opacity: 70%;
+      }
 
 .image-container {
     display: flex;
