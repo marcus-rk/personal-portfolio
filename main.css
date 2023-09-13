@@ -50,7 +50,7 @@ p {
 /************ NAVIGATION BAR ************/
 /****************************************/
 
-.burger-nav-bar, .nav-toggle{
+.burger-nav-bar, .nav-toggle {
     display: none;
 }
 
@@ -74,32 +74,37 @@ nav ul {
     text-decoration: none;
     color: var(--off-white-color);
     font-size: 1.3em;
-} .nav-bar a:hover{
-    text-decoration: underline;
-  }
+}
 
-#nav-contact-button a{
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+#nav-contact-button a {
     color: var(--off-white-color);
     font-size: 1.4em;
 }
+
 #nav-contact-button {
     background-color: var(--dark-blue-color);
     padding: 1rem;
     border-radius: 12px; /* round corners */
     border: 2px solid var(--light-blue-color);
     transition-duration: 0.4s;
-}  #nav-contact-button:hover {
-       background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--light-blue-color) 100%);
-       border: 2px solid var(--dark-blue-color);
-       color: var(--dark-blue-color);
-       cursor: pointer;
+}
+
+#nav-contact-button:hover {
+    background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--light-blue-color) 100%);
+    border: 2px solid var(--dark-blue-color);
+    color: var(--dark-blue-color);
+    cursor: pointer;
 }
 
 /****************************************/
 /************* LANDING PAGE *************/
 /****************************************/
 
-#landing-page{
+#landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,32 +112,41 @@ nav ul {
     padding: 4rem 4rem;
 }
 
-.landing-page-container{
+.landing-page-container {
     width: 28rem;
-} .landing-page-container h1 {
+}
+
+.landing-page-container h1 {
     padding: 1rem 0 1rem 0;
-  }
-.landing-page-container #read-more-button a{
+}
+
+.read-more-button a {
     text-decoration: none;
     font-weight: bold;
     color: var(--dark-navy-color);
     font-size: 1.1em;
 }
-  .landing-page-container #read-more-button{
-      background-color: white;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 12px; /* round corners */
-      border: 2px solid var(--light-blue-color);
-      transition-duration: 0.4s;
-  }  .landing-page-container #read-more-button:hover {
-           background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--dark-blue-color) 100%);
-           border: 2px solid var(--light-blue-color);
-           cursor: pointer;
-     } .landing-page-container #read-more-button:hover a{
-                  color: var(--off-white-color);
-                  cursor: pointer;
-              }
+
+.read-more-button {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px; /* round corners */
+    border: 2px solid var(--light-blue-color);
+    transition-duration: 0.4s;
+} .landing-page-container .read-more-button {
+    margin-top: 1.5rem;
+  }
+
+.read-more-button:hover {
+    background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--dark-blue-color) 100%);
+    border: 2px solid var(--light-blue-color);
+    cursor: pointer;
+}
+
+.read-more-button:hover a {
+    color: var(--off-white-color);
+    cursor: pointer;
+}
 
 /****************************************/
 /*************** ABOUT ME ***************/
@@ -158,44 +172,48 @@ nav ul {
     width: 70%;
     max-width: 52rem;
     color: var(--off-white-color);
-  }
+}
 
-.education-work-container{
+.education-work-container {
     display: flex;
-    gap:4rem;
+    gap: 4rem;
     margin-top: 2.4rem;
     background: linear-gradient(90deg, var(--dark-blue-color) 0%, var(--medium-blue-color) 100%);
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 0 2px 10px 0 var(--dark-navy-color);
-} .education-work-container h3 {
-      color: var(--light-blue-color);
-      padding-bottom: 1rem;
-  }
+}
 
-  .education-work-container ul li {
-      color: var(--off-white-color);
-      list-style-type: square;
-      margin-left: 1rem;
-      line-height: 1.75rem;
-  }
+.education-work-container h3 {
+    color: var(--light-blue-color);
+    padding-bottom: 1rem;
+}
+
+.education-work-container ul li {
+    color: var(--off-white-color);
+    list-style-type: square;
+    margin-left: 1rem;
+    line-height: 1.75rem;
+}
 
 /****************************************/
 /*************** PORTFOLIO **************/
 /****************************************/
 
-#portfolio-section{
+#portfolio-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 4rem 0;
-} #portfolio-section h2{
+}
+
+#portfolio-section h2 {
     color: var(--medium-blue-color);
     padding-bottom: 3rem;
-  }
+}
 
-.portfolio-project-wrapper{
+.portfolio-project-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -203,39 +221,61 @@ nav ul {
     gap: 4rem;
 }
 
-.portfolio-project{
+.portfolio-project {
     display: flex;
     justify-content: center;
-}  .portfolio-project:nth-child(odd){
+}
+
+.portfolio-project:nth-child(odd) {
     gap: 4rem;
-  }
-  .portfolio-project:nth-child(even){
-      gap: 4rem;
-  } .portfolio-project:nth-child(even) h3{
-          text-align: end;
-          margin-right: 0.5rem;
-      }
-  .portfolio-project h3 {
-      padding-bottom: 1rem;
-  }
-  .project-text-wrapper{
-      width: 50%;
-  }
-  .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-  }
-  .image-container img{
-      width: 100%;
-  }
+}
+
+.portfolio-project:nth-child(even) {
+    gap: 4rem;
+}
+
+.portfolio-project:nth-child(even) h3 {
+    text-align: end;
+    margin-right: 0.5rem;
+}
+
+.portfolio-project h3 {
+    padding-bottom: 1rem;
+}
+
+.project-text-wrapper {
+    width: 50%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.github-and-demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.github-and-demo-container img {
+    aspect-ratio: 1/1;
+    width: 2.5rem;
+}
 
 /****************************************/
 /**************** FOOTER ****************/
 /****************************************/
 
-footer{
+footer {
     background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--dark-blue-color) 100%);
     display: flex;
     flex-direction: column;
@@ -243,9 +283,11 @@ footer{
     align-items: center;
     padding: 4rem 0 4rem 0;
     box-shadow: 0 2px 20px 0 var(--dark-navy-color);
-} footer h4 {
+}
+
+footer h4 {
     padding-bottom: 1rem;
-  }
+}
 
 
 /****************************************/
@@ -253,7 +295,7 @@ footer{
 /****************************************/
 
 @media screen and (max-width: 768px) {
-    .nav-bar{
+    .nav-bar {
         display: none;
         align-items: stretch;
         position: fixed;
@@ -264,6 +306,7 @@ footer{
         margin-top: 6.5rem;
         border-radius: 10px 0 0 10px;
     }
+
     .nav-bar ul {
         flex-direction: column;
     }
@@ -277,7 +320,7 @@ footer{
         width: 3.5rem;
     }
 
-    .nav-toggle{
+    .nav-toggle {
         display: flex;
         position: fixed;
         right: 0;
@@ -286,22 +329,26 @@ footer{
         margin: 2px 24.5px 0 0;
         opacity: 0;
     }
-    .nav-toggle:checked + .nav-bar{ /* fix toggle off */
+
+    .nav-toggle:checked + .nav-bar { /* fix toggle off */
         display: flex;
     }
 
-    #landing-page{
+    #landing-page {
         flex-direction: column;
         padding: 2rem 0 0 0;
         gap: 3rem;
     }
-    .landing-page-container{
+
+    .landing-page-container {
         padding-top: 3rem;
         width: 80%;
     }
-    #landing-page h1{
+
+    #landing-page h1 {
         font-size: 2.06em;
     }
+
     #landing-page img {
         width: 100%;
         height: 25rem;
@@ -309,11 +356,11 @@ footer{
         object-position: center;
     }
 
-    #about-me-section{
+    #about-me-section {
         padding: 4rem 0;
     }
 
-    .education-work-container{
+    .education-work-container {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
@@ -322,20 +369,26 @@ footer{
     .portfolio-project:nth-child(odd) {
         flex-direction: column-reverse;
         gap: 2rem;
-    } .portfolio-project:nth-child(odd) h3{
-              text-align: center;
-          }
+    }
+
+    .portfolio-project:nth-child(odd) h3 {
+        text-align: center;
+    }
+
     .portfolio-project:nth-child(even) {
         flex-direction: column;
         gap: 2rem;
-    } .portfolio-project:nth-child(even) h3{
-              text-align: center;
-          }
+    }
 
-    .project-text-wrapper, .image-container{
+    .portfolio-project:nth-child(even) h3 {
+        text-align: center;
+    }
+
+    .project-text-wrapper, .image-container {
         width: 100%;
     }
-    .image-container img{
+
+    .image-container img {
         width: 100%;
         max-width: 50rem;
     }
@@ -343,19 +396,21 @@ footer{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-    header nav{
+    header nav {
         /* Burger-nav-bar here */
     }
 
-    #landing-page{
+    #landing-page {
         flex-direction: column;
         padding: 0;
         gap: 3rem;
     }
-    .landing-page-container{
+
+    .landing-page-container {
         padding-top: 3rem;
         width: 80%;
     }
+
     #landing-page img {
         width: 100%;
         height: 30rem;
@@ -363,7 +418,7 @@ footer{
         object-position: center;
     }
 
-    #about-me-section{
+    #about-me-section {
         padding: 4rem 0 5rem 0;
     }
 
@@ -375,21 +430,26 @@ footer{
     .portfolio-project:nth-child(odd) {
         flex-direction: column-reverse;
         gap: 2rem;
-    } .portfolio-project:nth-child(odd) h3{
-          text-align: center;
-      }
+    }
+
+    .portfolio-project:nth-child(odd) h3 {
+        text-align: center;
+    }
+
     .portfolio-project:nth-child(even) {
         flex-direction: column;
         gap: 2rem;
-    } .portfolio-project:nth-child(even) h3{
-          text-align: center;
-      }
+    }
 
-    .project-text-wrapper, .image-container{
+    .portfolio-project:nth-child(even) h3 {
+        text-align: center;
+    }
+
+    .project-text-wrapper, .image-container {
         width: 100%;
     }
 
-    .image-container img{
+    .image-container img {
         width: 100%;
         max-width: 50rem;
     }
