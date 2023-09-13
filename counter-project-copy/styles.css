@@ -1,0 +1,89 @@
+/* Makj0005 */
+/********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* COLOR PALETTE FOR WHEN NUMBER = 0 */
+:root,
+:root.zero {
+    --color-hover: #6c757d;
+    --color-section: #adb5bd;
+    --color-button: #dee2e6;
+    --color-text: black;
+    --color-text-hover: black;
+}
+
+/* COLOR PALETTE WHEN NUMBER > 0 */
+:root.positive {
+    --color-hover: #38A3A5;
+    --color-section: #57CC99;
+    --color-button: #C7F9CC;
+    --color-text: black;
+    --color-text-hover: black;
+}
+
+/* COLOR PALETTE WHEN NUMBER < 0 */
+:root.negative {
+    --color-hover: #8c1c13;
+    --color-section: #bf4342;
+    --color-button: #e7d7c1;
+    --color-text: black;
+    --color-text-hover: #e7d7c1;
+}
+
+/********************************************/
+
+section {
+    height: 100vh; /* fill out full height */
+    width: 100vw; /* fill out full width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-section);
+    transition: background-color 0.15s;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+span {
+    font-size: 5em;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 50rem;
+    list-style-type: none;
+}
+
+ul li button {
+    border: solid black 3px;
+    border-radius: 1em;
+    padding: 1rem 2em;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--color-button);
+    transition: background-color 0.15s;
+} ul li button:hover {
+      background-color: var(--color-hover);
+      color: var(--color-text-hover);
+      transition: 0.15s;
+  }
+
+@media only screen and (max-width: 650px) {
+    ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
