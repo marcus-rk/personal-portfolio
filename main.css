@@ -258,14 +258,14 @@ nav ul {
     width: 100%;
 }
 
-.github-and-demo-container {
+.github-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.github-and-demo-container img {
+.github-container img {
     aspect-ratio: 1/1;
     width: 2.5rem;
 }
