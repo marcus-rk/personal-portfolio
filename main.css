@@ -120,30 +120,30 @@ nav ul {
     padding: 1rem 0 1rem 0;
 }
 
-.read-more-button a {
+#read-more-button a {
     text-decoration: none;
     font-weight: bold;
     color: var(--dark-navy-color);
     font-size: 1.1em;
 }
 
-.read-more-button {
+#read-more-button {
     background-color: white;
     padding: 1rem;
     border-radius: 12px; /* round corners */
     border: 2px solid var(--light-blue-color);
     transition-duration: 0.4s;
-} .landing-page-container .read-more-button {
+} .landing-page-container #read-more-button {
     margin-top: 1.5rem;
   }
 
-.read-more-button:hover {
+#read-more-button:hover {
     background: linear-gradient(90deg, var(--medium-blue-color) 0%, var(--dark-blue-color) 100%);
     border: 2px solid var(--light-blue-color);
     cursor: pointer;
 }
 
-.read-more-button:hover a {
+#read-more-button:hover a {
     color: var(--off-white-color);
     cursor: pointer;
 }
