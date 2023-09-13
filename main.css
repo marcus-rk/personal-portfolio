@@ -245,7 +245,10 @@ nav ul {
 
 .project-text-wrapper {
     width: 50%;
-}
+} .project-text-wrapper a {
+    color: black;
+    font-weight: bold;
+  }
 
 .image-container {
     display: flex;
@@ -256,18 +259,6 @@ nav ul {
 
 .image-container img {
     width: 100%;
-}
-
-.github-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.github-container img {
-    aspect-ratio: 1/1;
-    width: 2.5rem;
 }
 
 /****************************************/
